@@ -1,0 +1,3 @@
+[submodule "integrations/msg-to-pdf-dropzone"]
+	path = integrations/msg-to-pdf-dropzone
+	url = https://github.com/derek-betz/msg-to-pdf-dropzone.git
