@@ -1,3 +1,14 @@
 .DS_Store
+.agents/
+.playwright-cli/
+output/*
+!output/.gitkeep
+tmp/
 runtime/node_modules/
 runtime/dist/
+costest-live-demo/
+integrations/cost-estimate-generator/prototype/node_modules/
+integrations/msg-to-pdf-dropzone/.pytest_cache/
+integrations/msg-to-pdf-dropzone/.venv/
+integrations/msg-to-pdf-dropzone/.tmp-*
+integrations/msg-to-pdf-dropzone/theater_runtime/node_modules/

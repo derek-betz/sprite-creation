@@ -1,0 +1,14 @@
+{
+  "assets": [
+    {
+      "name": "cone-guy-cost-estimator",
+      "path": "assets/roadway/cone-guy-cost-estimator.png",
+      "integration": "cost-estimate-generator",
+      "category": "roadway",
+      "status": "approved-prototype",
+      "generated_via": "SpriteCook",
+      "source_metadata": "catalog/spritecook-assets.json",
+      "notes": "Cone Guy sprite used for the Cost Estimate Generator progress tracker prototype."
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cost Estimate Generator Live Animation Demo</title>
+    <link rel="stylesheet" href="/showcase.css" />
+  </head>
+  <body>
+    <div class="shell-bg"></div>
+    <main class="shell">
+      <header class="shell-header">
+        <div class="shell-copy">
+          <div class="shell-kicker">Runtime Animation Prototype</div>
+          <h1>Cone-bot escort for live estimate runs</h1>
+          <p>
+            The estimator below is the real local <code>CostEstimateGenerator</code> UI.
+            The animated companion is injected into the live page at runtime only, so the repo stays untouched.
+          </p>
+        </div>
+        <div class="shell-meta">
+          <div class="meta-card">
+            <span class="meta-label">Mode</span>
+            <strong>Browser-only injection</strong>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Data flow</span>
+            <strong>Real estimator run</strong>
+          </div>
+        </div>
+        <div class="shell-actions">
+          <div class="shell-control-bar">
+            <button class="shell-demo-button is-primary" id="control-play" type="button">Play</button>
+            <button class="shell-demo-button" id="control-pause" type="button">Pause</button>
+            <button class="shell-demo-button" id="control-restart" type="button">Restart</button>
+          </div>
+          <div class="shell-phase-bar">
+            <button class="shell-phase-button" data-phase="0" type="button">Load</button>
+            <button class="shell-phase-button" data-phase="10" type="button">Alternate-seek</button>
+            <button class="shell-phase-button" data-phase="20" type="button">Pricing</button>
+            <button class="shell-phase-button" data-phase="35" type="button">Finish</button>
+          </div>
+          <div class="shell-demo-note" id="dummy-run-note">
+            Manual animation controls. Play the 45-second browser-only estimate or jump straight to alternate-seek.
+          </div>
+        </div>
+      </header>
+
+      <section class="shell-stage">
+        <div class="shell-grid">
+          <div class="shell-live-panel">
+            <section class="estimator-showcase estimator-showcase-shell is-running" id="shell-showcase">
+              <div class="estimator-showcase-header">
+                <div>
+                  <div class="estimator-showcase-kicker">Runtime Companion</div>
+                  <h2 class="estimator-showcase-title">Cone-bot escorts the estimator through a midnight work zone.</h2>
+                  <div class="estimator-showcase-copy" id="shell-showcase-copy">
+                    A browser-only animation layer that turns estimator progress into a tiny roadway operations game scene.
+                  </div>
+                </div>
+                <div class="estimator-showcase-reactor">
+                  <div class="estimator-reactor-label">Estimator Core</div>
+                  <div class="estimator-reactor-ring">
+                    <div class="estimator-reactor-core"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="shell-mission-strip">
+                <article class="shell-score-card">
+                  <span class="shell-score-label">Mission State</span>
+                  <strong class="shell-score-value" id="shell-mission-state">Convoy Live</strong>
+                  <span class="shell-score-meta">Runtime-only overlay, real estimator underneath</span>
+                </article>
+                <article class="shell-score-card">
+                  <span class="shell-score-label">Phase</span>
+                  <strong class="shell-score-value" id="shell-score-phase">Pricing Sweep</strong>
+                  <span class="shell-score-meta">Filtering contracts and stabilizing unit prices</span>
+                </article>
+                <article class="shell-score-card">
+                  <span class="shell-score-label">ETA Signal</span>
+                  <strong class="shell-score-value" id="shell-score-eta">11s lane</strong>
+                  <span class="shell-score-meta">Fast enough to feel alive, long enough to entertain</span>
+                </article>
+              </div>
+              <div class="estimator-showcase-stage shell-showcase-stage">
+                <div class="shell-stage-grid-glow"></div>
+                <div class="shell-stage-scanline"></div>
+                <div class="shell-stage-skyline">
+                  <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="shell-stage-target">
+                  <div class="shell-target-label">Target Workbook</div>
+                  <div class="shell-target-value">2300946</div>
+                  <div class="shell-target-meta" id="shell-target-meta">BidTabs corridor locked</div>
+                </div>
+                <div class="shell-stage-orbit">
+                  <div class="shell-orbit-ring shell-orbit-ring-a"></div>
+                  <div class="shell-orbit-ring shell-orbit-ring-b"></div>
+                  <div class="shell-stage-drone shell-stage-drone-a"></div>
+                  <div class="shell-stage-drone shell-stage-drone-b"></div>
+                </div>
+                <div class="estimator-showcase-hud">
+                  <div class="estimator-showcase-hud-label">Live Status</div>
+                  <div class="estimator-showcase-hud-value" id="shell-hud-value">RUN</div>
+                  <div class="estimator-showcase-hud-meta" id="shell-hud-meta">Estimator convoy in motion</div>
+                </div>
+                <div class="shell-stage-progress">
+                  <div class="shell-progress-label">Route Progress</div>
+                  <div class="shell-progress-track">
+                    <span class="shell-progress-fill" id="shell-progress-fill"></span>
+                    <span class="shell-progress-node is-active" id="shell-node-load">LOAD</span>
+                    <span class="shell-progress-node is-active" id="shell-node-filter">FILTER</span>
+                    <span class="shell-progress-node is-pulse" id="shell-node-price">PRICE</span>
+                    <span class="shell-progress-node" id="shell-node-export">EXPORT</span>
+                  </div>
+                </div>
+                <div class="estimator-showcase-pulse"></div>
+                <div class="estimator-showcase-road"></div>
+                <div class="estimator-showcase-lane"></div>
+                <div class="shell-stage-beacons">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="estimator-showcase-bot shell-bot-large">
+                  <div class="estimator-showcase-arm"></div>
+                  <img alt="Cone-bot sprite" src="/cone-bot.png" />
+                </div>
+                <div class="estimator-showcase-beam"></div>
+                <div class="estimator-showcase-sparks">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="estimator-showcase-cones">
+                  <div class="estimator-showcase-cone"></div>
+                  <div class="estimator-showcase-cone"></div>
+                  <div class="estimator-showcase-cone"></div>
+                </div>
+              </div>
+              <div class="estimator-showcase-footer shell-showcase-footer">
+                <div class="estimator-showcase-status">
+                  <div class="estimator-showcase-status-title" id="shell-status-title">Estimator convoy in motion.</div>
+                  <div class="estimator-showcase-status-detail" id="shell-status-detail">
+                    Triangulating sane unit prices, calming variance, and sweeping the lane for outliers.
+                  </div>
+                  <div class="estimator-showcase-meter-track">
+                    <div class="estimator-showcase-meter-bar"></div>
+                  </div>
+                </div>
+                <div class="shell-ops-feed">
+                  <div class="shell-ops-head">
+                    <span>Ops Feed</span>
+                    <span class="estimator-showcase-chip" id="shell-chip">Live run</span>
+                  </div>
+                  <div class="shell-ops-log" id="shell-ops-log">
+                    <div class="shell-ops-line">Loading workbook and priming the lane.</div>
+                    <div class="shell-ops-line">Cone-bot is sweeping for price outliers.</div>
+                    <div class="shell-ops-line">Export docks standing by.</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <iframe
+            id="estimator-frame"
+            title="Cost Estimate Generator"
+            src="/estimator/"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <script src="/showcase.js"></script>
+  </body>
+</html>
