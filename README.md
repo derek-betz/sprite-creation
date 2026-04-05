@@ -1,4 +1,4 @@
-# Sprite Creation Workshop
+# sprite-creation
 
 `sprite-creation` is a long-lived workspace for two related kinds of work:
 
@@ -18,7 +18,7 @@
 
 ## Current Integrations
 
-- `integrations/msg-to-pdf-dropzone/`: existing task-theater style app integration
+- `integrations/msg-to-pdf-dropzone/`: existing sprite-driven app integration
 - `integrations/cost-estimate-generator/`: Cone Guy progress tracker prototype and notes
 
 ## Repo Rules

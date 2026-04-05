@@ -1,6 +1,6 @@
 # `msg-to-pdf` Storyboard
 
-This is the first storyboard for the task-theater prototype.
+This is the first storyboard for the sprite-creation prototype.
 
 ## Goal
 
