@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "projects:list": "node ./scripts/list-projects.mjs"
+    "projects:list": "node ./scripts/list-projects.mjs",
+    "project:open": "node ./scripts/open-project.mjs",
+    "project:info": "node ./scripts/project-info.mjs"
   },
   "dependencies": {
     "pixi.js": "^8.14.2"

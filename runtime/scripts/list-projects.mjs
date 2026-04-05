@@ -1,23 +1,21 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
+import { getProjectMap } from './project-path.mjs';
 
 const repoRoot = path.resolve(import.meta.dirname, '..', '..');
-const configDir = path.join(repoRoot, 'config');
-const localConfigPath = path.join(configDir, 'projects.local.json');
-const exampleConfigPath = path.join(configDir, 'projects.example.json');
+const localConfigPath = path.join(repoRoot, 'config', 'projects.local.json');
+const exampleConfigPath = path.join(repoRoot, 'config', 'projects.example.json');
 
-function readJson(filePath) {
-  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
-}
-
-if (!fs.existsSync(localConfigPath)) {
+let config;
+try {
+  config = getProjectMap();
+} catch {
   console.log(`No local project map found at ${localConfigPath}`);
   console.log(`Copy ${exampleConfigPath} to ${localConfigPath} and update paths.`);
   process.exit(0);
 }
 
-const config = readJson(localConfigPath);
 const entries = Object.entries(config);
 
 if (entries.length === 0) {

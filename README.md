@@ -51,8 +51,22 @@ Example:
 Then from `runtime/` you can run:
 
 - `npm run projects:list`
+- `npm run project:info -- <project-name>`
+- `npm run project:open -- <project-name>`
 
 This keeps app repos independent while still making it easy for `sprite-creation` to know where your real local clones live.
+
+## Starting a New Integration
+
+Copy `integrations/_template/` to `integrations/<project-name>/`.
+
+That template gives each new integration a consistent structure for:
+
+- integration intent
+- event/state mapping
+- rough notes
+- optional prototype work
+- captured visual references
 
 ## Repo Rules
 
