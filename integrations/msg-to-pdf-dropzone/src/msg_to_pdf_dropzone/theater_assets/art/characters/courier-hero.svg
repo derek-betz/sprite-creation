@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 280">
+  <defs>
+    <linearGradient id="armor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b7d79"/>
+      <stop offset="100%" stop-color="#1c373d"/>
+    </linearGradient>
+    <linearGradient id="armorDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2b4252"/>
+      <stop offset="100%" stop-color="#131a26"/>
+    </linearGradient>
+    <linearGradient id="goldTrim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd697"/>
+      <stop offset="100%" stop-color="#8f6336"/>
+    </linearGradient>
+    <radialGradient id="reactor" cx="50%" cy="48%" r="52%">
+      <stop offset="0%" stop-color="#cbfbff" stop-opacity=".96"/>
+      <stop offset="28%" stop-color="#8ce6ff" stop-opacity=".7"/>
+      <stop offset="100%" stop-color="#2d7a93" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000000" flood-opacity=".36"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="126" cy="252" rx="42" ry="12" fill="#040709" opacity=".38"/>
+    <path d="M98 46l-22 98 20 80 30 24 30-24 22-82-20-96-26-20z" fill="#19212c"/>
+    <path d="M88 56l-26 24-12 38 20 8 20-36z" fill="url(#armorDark)"/>
+    <path d="M174 56l24 24 12 38-20 8-18-36z" fill="url(#armorDark)"/>
+    <path d="M84 98l-18 56 18 10 26-54z" fill="#274b53"/>
+    <path d="M178 98l18 56-18 10-24-54z" fill="#274b53"/>
+    <path d="M98 46h56l-4 16h-48z" fill="url(#goldTrim)" opacity=".62"/>
+    <path d="M96 68h60l18 62-16 78-28 22-28-22-14-78z" fill="url(#armor)" stroke="#defcff" stroke-opacity=".12" stroke-width="2"/>
+    <path d="M82 84l26-22 14 36-20 30-24-10z" fill="#365d64"/>
+    <path d="M178 84l-26-22-12 36 18 30 24-10z" fill="#365d64"/>
+    <path d="M90 218l-10 40 18 10 18-30 4-36z" fill="url(#armorDark)"/>
+    <path d="M168 218l10 40-18 10-18-30-4-36z" fill="url(#armorDark)"/>
+    <path d="M106 214l-8 52 20 8 12-54z" fill="#243446"/>
+    <path d="M152 214l8 52-20 8-12-54z" fill="#243446"/>
+    <path d="M104 54l-8 26 14 22h40l14-22-8-26z" fill="#1b2938" stroke="#f1f8ff" stroke-opacity=".12" stroke-width="1.5"/>
+    <path d="M118 34h22l18 20-8 10h-44l-8-10z" fill="#2e4a5d"/>
+    <path d="M114 50h30l8 10-10 10h-26l-10-10z" fill="#0f1b28"/>
+    <rect x="114" y="56" width="32" height="8" rx="4" fill="#c9efff" opacity=".56"/>
+    <path d="M74 56l-18 18 20 64 24-10-14-54z" fill="#4b7f81"/>
+    <path d="M186 56l18 18-20 64-24-10 14-54z" fill="#4b7f81"/>
+    <path d="M70 132l18-2 8 24-22 20-10-10z" fill="#18222e"/>
+    <path d="M190 132l-18-2-8 24 22 20 10-10z" fill="#18222e"/>
+    <path d="M64 148l-8 14 20 12 10-12-8-14z" fill="#e5b96f" opacity=".72"/>
+    <path d="M196 148l8 14-20 12-10-12 8-14z" fill="#68d8ff" opacity=".72"/>
+    <path d="M98 112h64l-6 56h-52z" fill="#132332"/>
+    <circle cx="130" cy="136" r="30" fill="url(#reactor)"/>
+    <circle cx="130" cy="136" r="12" fill="#a4f5ff" opacity=".64"/>
+    <rect x="114" y="168" width="32" height="20" rx="8" fill="#162433"/>
+    <rect x="110" y="20" width="40" height="12" rx="6" fill="url(#goldTrim)" opacity=".7"/>
+    <path d="M90 86l-28 118 20 18 20-72 6-34z" fill="#1b2330" opacity=".84"/>
+    <path d="M170 86l28 118-20 18-20-72-6-34z" fill="#1b2330" opacity=".84"/>
+    <path d="M120 248l-10 14h16l8-12z" fill="#0d131b"/>
+    <path d="M140 250l8 12h16l-10-14z" fill="#0d131b"/>
+  </g>
+</svg>

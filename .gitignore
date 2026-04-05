@@ -4,6 +4,7 @@
 output/*
 !output/.gitkeep
 tmp/
+config/projects.local.json
 runtime/node_modules/
 runtime/dist/
 costest-live-demo/

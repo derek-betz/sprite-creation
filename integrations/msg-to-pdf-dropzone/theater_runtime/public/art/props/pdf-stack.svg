@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 92">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#edf5ff"/>
+      <stop offset="100%" stop-color="#d6e3ff"/>
+    </linearGradient>
+    <linearGradient id="tab" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#97bfff"/>
+      <stop offset="100%" stop-color="#4e7eff"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="72" height="92" rx="12" fill="url(#paper)" stroke="#26407a" stroke-width="2"/>
+  <rect x="8" y="8" width="56" height="18" rx="7" fill="url(#tab)" opacity=".24" stroke="#6296ff" stroke-opacity=".58" stroke-width="1.5"/>
+  <rect x="12" y="13" width="24" height="7" rx="3.5" fill="#5385ff"/>
+  <circle cx="52" cy="16" r="6" fill="#9ec0ff" opacity=".28"/>
+  <path d="M12 36h48v4H12z" fill="#24416f" opacity=".22"/>
+  <path d="M12 48h44v4H12z" fill="#24416f" opacity=".18"/>
+  <path d="M12 60h36v4H12z" fill="#24416f" opacity=".14"/>
+  <path d="M50 0h22v22H60L50 12z" fill="#ffffff" opacity=".26" stroke="#26407a" stroke-opacity=".18" stroke-width="1"/>
+  <text x="36" y="23" font-family="Avenir Next Condensed, Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#1c3465" text-anchor="middle">PDF</text>
+</svg>

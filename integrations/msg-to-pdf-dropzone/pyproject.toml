@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msg-to-pdf-dropzone"
+version = "0.1.0"
+description = "Windows drag-and-drop converter from Outlook .msg emails to PDF files."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "extract-msg>=0.45.0,<1.0.0",
+  "reportlab>=4.2.0,<5.0.0",
+  "tkinterdnd2>=0.4.2,<1.0.0",
+  "pywin32>=306; platform_system == 'Windows'",
+  "pywebview>=5.1,<6.0; platform_system == 'Windows'",
+]
+
+[project.scripts]
+msg-to-pdf-dropzone = "msg_to_pdf_dropzone.app:main"
+msg-to-pdf-corpus-profile = "msg_to_pdf_dropzone.corpus_profiler:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+msg_to_pdf_dropzone = [
+  "theater_assets/*",
+  "theater_assets/assets/*",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

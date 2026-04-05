@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150">
+  <defs>
+    <linearGradient id="iron" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#532725"/>
+      <stop offset="100%" stop-color="#251012"/>
+    </linearGradient>
+    <linearGradient id="ember" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8c65" stop-opacity=".76"/>
+      <stop offset="100%" stop-color="#8a2817" stop-opacity=".28"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity=".38"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="120" cy="142" rx="76" ry="8" fill="#09090b" opacity=".46"/>
+    <path d="M40 36h160l-8 96H48z" fill="url(#iron)" stroke="#ffbcaa" stroke-opacity=".18" stroke-width="2"/>
+    <path d="M58 58h124v54H58z" rx="18" fill="#15090b" opacity=".94"/>
+    <path d="M68 68h104v34H68z" rx="12" fill="url(#ember)"/>
+    <path d="M74 78h92v4H74z" fill="#ffb09b" opacity=".24"/>
+    <path d="M74 86h92v4H74z" fill="#ffb09b" opacity=".18"/>
+    <path d="M54 46h20v12H54z" rx="6" fill="#5d2c2a"/>
+    <path d="M166 46h20v12h-20z" rx="6" fill="#5d2c2a"/>
+    <circle cx="64" cy="52" r="4" fill="#ff9272" opacity=".64"/>
+    <circle cx="176" cy="52" r="4" fill="#ff9272" opacity=".64"/>
+  </g>
+</svg>

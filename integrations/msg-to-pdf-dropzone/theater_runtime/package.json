@@ -1,5 +1,5 @@
 {
-  "name": "sprite-creation-runtime",
+  "name": "sprite-task-theater-runtime",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -7,13 +7,14 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "projects:list": "node ./scripts/list-projects.mjs"
+    "test": "vitest run"
   },
   "dependencies": {
     "pixi.js": "^8.14.2"
   },
   "devDependencies": {
     "typescript": "^5.9.3",
-    "vite": "^7.1.7"
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4"
   }
 }

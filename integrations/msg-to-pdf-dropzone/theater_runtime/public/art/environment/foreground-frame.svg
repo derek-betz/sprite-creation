@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540">
+  <defs>
+    <linearGradient id="pillar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#233143"/>
+      <stop offset="100%" stop-color="#0f1621"/>
+    </linearGradient>
+    <linearGradient id="trim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4c586"/>
+      <stop offset="100%" stop-color="#8c6232"/>
+    </linearGradient>
+  </defs>
+
+  <g opacity=".9">
+    <path d="M0 0h32v540H0z" fill="url(#pillar)"/>
+    <path d="M848 0h32v540h-32z" fill="url(#pillar)"/>
+    <path d="M24 0h6v540h-6z" fill="url(#trim)" opacity=".18"/>
+    <path d="M850 0h6v540h-6z" fill="url(#trim)" opacity=".18"/>
+  </g>
+
+  <g opacity=".58">
+    <path d="M0 498h880v42H0z" fill="#070a10"/>
+    <path d="M56 468h170l20 72H32z" fill="#111a26"/>
+    <path d="M652 468h170l26 72H626z" fill="#111a26"/>
+    <path d="M330 492h220l16 48H314z" fill="#101722"/>
+  </g>
+
+  <g opacity=".26" stroke="#d8c1a1" stroke-width="2" fill="none">
+    <path d="M12 84c22 16 30 48 30 74v262"/>
+    <path d="M868 84c-22 16-30 48-30 74v262"/>
+  </g>
+</svg>

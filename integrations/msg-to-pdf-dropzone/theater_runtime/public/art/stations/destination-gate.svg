@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 270">
+  <defs>
+    <linearGradient id="archMetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#244138"/>
+      <stop offset="100%" stop-color="#15241f"/>
+    </linearGradient>
+    <radialGradient id="portal" cx="50%" cy="44%" r="52%">
+      <stop offset="0%" stop-color="#bbffe4" stop-opacity=".82"/>
+      <stop offset="34%" stop-color="#79f6ba" stop-opacity=".34"/>
+      <stop offset="100%" stop-color="#1e5140" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#000000" flood-opacity=".38"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="126" cy="252" rx="78" ry="14" fill="#07100d" opacity=".5"/>
+    <path d="M48 108h144l-10 126H58z" fill="url(#archMetal)" stroke="#9be8bb" stroke-opacity=".24" stroke-width="2"/>
+    <path d="M68 42h104l20 76H48z" fill="#223a31" stroke="#c8f8d9" stroke-opacity=".16" stroke-width="2"/>
+    <path d="M86 58h68l10 44H76z" fill="#10201b" opacity=".86"/>
+    <rect x="64" y="100" width="20" height="116" rx="10" fill="#1a2e27"/>
+    <rect x="164" y="100" width="20" height="116" rx="10" fill="#1a2e27"/>
+    <rect x="78" y="92" width="92" height="18" rx="9" fill="#304c42"/>
+    <rect x="88" y="112" width="72" height="92" rx="28" fill="url(#portal)" stroke="#dffff1" stroke-opacity=".18" stroke-width="1.5"/>
+    <rect x="100" y="124" width="48" height="14" rx="7" fill="#baffdf" opacity=".2"/>
+    <rect x="94" y="212" width="60" height="14" rx="7" fill="#97f4c2" opacity=".22"/>
+    <path d="M74 148h10v44H74z" fill="#121b18"/>
+    <path d="M176 148h10v44h-10z" fill="#121b18"/>
+    <circle cx="74" cy="118" r="4" fill="#a6ffc8" opacity=".72"/>
+    <circle cx="178" cy="118" r="4" fill="#a6ffc8" opacity=".72"/>
+    <path d="M118 46l12-18 12 18z" fill="#b8ffe1" opacity=".74"/>
+  </g>
+</svg>

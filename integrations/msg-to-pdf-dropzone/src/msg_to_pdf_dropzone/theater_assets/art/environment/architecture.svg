@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540">
+  <defs>
+    <linearGradient id="archMetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#293648"/>
+      <stop offset="100%" stop-color="#111926"/>
+    </linearGradient>
+    <linearGradient id="brace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#52637d"/>
+      <stop offset="100%" stop-color="#1c2838"/>
+    </linearGradient>
+    <linearGradient id="windowBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#83bfff" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#24456f" stop-opacity=".18"/>
+    </linearGradient>
+    <linearGradient id="windowGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffc77f" stop-opacity=".54"/>
+      <stop offset="100%" stop-color="#704925" stop-opacity=".16"/>
+    </linearGradient>
+    <linearGradient id="windowMint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#89ffd2" stop-opacity=".46"/>
+      <stop offset="100%" stop-color="#2b6d52" stop-opacity=".14"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="232" fill="#162130" opacity=".88"/>
+  <rect x="0" y="228" width="880" height="4" fill="#ffe0b1" opacity=".08"/>
+
+  <g fill="url(#archMetal)">
+    <path d="M68 0h26l46 232h-30z"/>
+    <path d="M216 0h24l54 232h-32z"/>
+    <path d="M428 0h24l56 232h-34z"/>
+    <path d="M644 0h24l52 232h-32z"/>
+    <path d="M790 0h24l40 232h-28z"/>
+  </g>
+
+  <g fill="url(#brace)" opacity=".62">
+    <path d="M138 0h90l-48 232h-52z"/>
+    <path d="M352 0h90l-48 232h-54z"/>
+    <path d="M566 0h92l-50 232h-54z"/>
+  </g>
+
+  <g>
+    <g transform="translate(120 36)">
+      <rect x="0" y="0" width="128" height="184" rx="30" fill="#1f2d3f" opacity=".9" stroke="#c8b392" stroke-opacity=".14" stroke-width="2"/>
+      <rect x="16" y="18" width="96" height="148" rx="24" fill="url(#windowGold)" stroke="#f8f9ff" stroke-opacity=".08" stroke-width="1.5"/>
+      <rect x="58" y="18" width="8" height="148" fill="#f8ffff" opacity=".08"/>
+      <rect x="16" y="86" width="96" height="7" fill="#ffffff" opacity=".07"/>
+    </g>
+    <g transform="translate(380 24)">
+      <rect x="0" y="0" width="128" height="196" rx="32" fill="#1f2d3f" opacity=".9" stroke="#c8b392" stroke-opacity=".14" stroke-width="2"/>
+      <rect x="16" y="18" width="96" height="160" rx="24" fill="url(#windowBlue)" stroke="#f8f9ff" stroke-opacity=".08" stroke-width="1.5"/>
+      <rect x="58" y="18" width="8" height="160" fill="#f8ffff" opacity=".08"/>
+      <rect x="16" y="92" width="96" height="7" fill="#ffffff" opacity=".07"/>
+    </g>
+    <g transform="translate(640 40)">
+      <rect x="0" y="0" width="122" height="180" rx="30" fill="#1f2d3f" opacity=".9" stroke="#c8b392" stroke-opacity=".14" stroke-width="2"/>
+      <rect x="14" y="16" width="94" height="146" rx="23" fill="url(#windowMint)" stroke="#f8f9ff" stroke-opacity=".08" stroke-width="1.5"/>
+      <rect x="55" y="16" width="8" height="146" fill="#f8ffff" opacity=".08"/>
+      <rect x="14" y="82" width="94" height="7" fill="#ffffff" opacity=".07"/>
+    </g>
+  </g>
+
+  <g opacity=".38">
+    <path d="M146 218h118l48 170H100Z" fill="#f0ab57"/>
+    <path d="M404 214h120l52 176H352Z" fill="#6ea3ff"/>
+    <path d="M660 216h112l42 168H614Z" fill="#78e4b2"/>
+  </g>
+
+  <g>
+    <rect x="44" y="250" width="792" height="18" rx="5" fill="#202b3c" opacity=".76"/>
+    <rect x="44" y="266" width="792" height="4" fill="#f3cf9d" opacity=".08"/>
+    <g fill="#3a4c66" opacity=".28">
+      <rect x="82" y="250" width="32" height="18"/>
+      <rect x="156" y="250" width="32" height="18"/>
+      <rect x="230" y="250" width="32" height="18"/>
+      <rect x="304" y="250" width="32" height="18"/>
+      <rect x="378" y="250" width="32" height="18"/>
+      <rect x="452" y="250" width="32" height="18"/>
+      <rect x="526" y="250" width="32" height="18"/>
+      <rect x="600" y="250" width="32" height="18"/>
+      <rect x="674" y="250" width="32" height="18"/>
+      <rect x="748" y="250" width="32" height="18"/>
+    </g>
+  </g>
+
+  <g opacity=".68">
+    <path d="M144 18h62l-12 118-16 10-12-10z" fill="#693d24"/>
+    <path d="M694 24h58l-10 124-14 10-12-10z" fill="#214865"/>
+  </g>
+</svg>

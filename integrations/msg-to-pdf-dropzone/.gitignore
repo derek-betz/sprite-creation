@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+*.log
+.tmp-*.jsonl
+.local-corpus-profiles/
+emails-for-testing/

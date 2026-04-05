@@ -1,0 +1,159 @@
+{
+  "environment": {
+    "background": [
+      {
+        "file": "/art/environment/sky-vault.svg",
+        "x": 0,
+        "y": 0,
+        "width": 880,
+        "height": 540
+      },
+      {
+        "file": "/art/environment/architecture.svg",
+        "x": 0,
+        "y": 0,
+        "width": 880,
+        "height": 540
+      },
+      {
+        "file": "/art/environment/playfloor.svg",
+        "x": 0,
+        "y": 0,
+        "width": 880,
+        "height": 540
+      }
+    ],
+    "foreground": [
+      {
+        "file": "/art/environment/foreground-frame.svg",
+        "x": 0,
+        "y": 0,
+        "width": 880,
+        "height": 540,
+        "alpha": 0.96
+      }
+    ]
+  },
+  "stations": {
+    "intake": {
+      "file": "/art/stations/intake-dais.svg",
+      "x": 38,
+      "y": 188,
+      "width": 262,
+      "height": 238
+    },
+    "conversion": {
+      "file": "/art/stations/conversion-altar.svg",
+      "x": 284,
+      "y": 118,
+      "width": 318,
+      "height": 320
+    },
+    "destination": {
+      "file": "/art/stations/destination-gate.svg",
+      "x": 582,
+      "y": 164,
+      "width": 244,
+      "height": 276
+    },
+    "error": {
+      "file": "/art/stations/error-furnace.svg",
+      "x": 592,
+      "y": 386,
+      "width": 234,
+      "height": 138
+    }
+  },
+  "courier": {
+    "file": "/art/characters/courier-hero.svg",
+    "width": 246,
+    "height": 270,
+    "carryAnchorX": -8,
+    "carryAnchorY": -154
+  },
+  "documents": {
+    "msg": "/art/props/msg-stack.svg",
+    "pdf": "/art/props/pdf-stack.svg",
+    "failed": "/art/props/failed-stack.svg"
+  },
+  "anchors": {
+    "entry": {
+      "x": -72,
+      "y": 320
+    },
+    "intake": {
+      "x": 142,
+      "y": 316
+    },
+    "station": {
+      "x": 425,
+      "y": 328
+    },
+    "destination": {
+      "x": 676,
+      "y": 330
+    },
+    "error": {
+      "x": 680,
+      "y": 424
+    },
+    "stationIncoming": {
+      "x": 386,
+      "y": 322
+    },
+    "stationOutgoing": {
+      "x": 470,
+      "y": 322
+    },
+    "stationTransferMid": {
+      "x": 427,
+      "y": 286
+    },
+    "errorStack": {
+      "x": 678,
+      "y": 404
+    },
+    "actorStops": {
+      "entry": {
+        "x": 42,
+        "y": 450
+      },
+      "intake": {
+        "x": 196,
+        "y": 450
+      },
+      "station": {
+        "x": 440,
+        "y": 450
+      },
+      "destination": {
+        "x": 706,
+        "y": 450
+      },
+      "error": {
+        "x": 706,
+        "y": 450
+      }
+    }
+  },
+  "pipelineFx": {
+    "outlook_edge": {
+      "stationGlowColor": 5208319,
+      "stationGlowAlpha": 0.22,
+      "destinationGlowColor": 7991212,
+      "destinationGlowAlpha": 0.22
+    },
+    "edge_html": {
+      "stationGlowColor": 14391864,
+      "stationGlowAlpha": 0.18,
+      "destinationGlowColor": 16108147,
+      "destinationGlowAlpha": 0.18
+    },
+    "reportlab": {
+      "stationGlowColor": 11885364,
+      "stationGlowAlpha": 0.16,
+      "destinationGlowColor": 16747866,
+      "destinationGlowAlpha": 0.14
+    }
+  }
+}

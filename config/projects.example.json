@@ -1,0 +1,4 @@
+{
+  "msg-to-pdf-dropzone": "/absolute/path/to/msg-to-pdf-dropzone",
+  "cost-estimate-generator": "/absolute/path/to/cost-estimate-generator"
+}
